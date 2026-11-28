@@ -1,0 +1,19 @@
+[remap]
+
+importer="inkscape_importer.scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dlil65xbmf5rn"
+path="res://.godot/imported/character.svg-d437bb04bb42b59f80e42f8c11b3faf3.scn"
+
+[deps]
+
+files=["res://character.tscn"]
+
+source_file="res://character.svg"
+dest_files=["res://.godot/imported/character.svg-d437bb04bb42b59f80e42f8c11b3faf3.scn", "res://character.tscn"]
+
+[params]
+
+atlas/padding=2
+atlas/mipmap_friendly=false

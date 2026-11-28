@@ -1,0 +1,13 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Legacy temporary files from older exporter versions
+.inkscape_character_tmp/
+
+# Generated atlas sources (Godot imports them to hidden .ctex files)
+addons/inkscape_scene_importer/generated/*
+!addons/inkscape_scene_importer/generated/.gitkeep
+
+# GUT is a dev-only test dependency installed by scripts/setup_testing.sh
+addons/gut/

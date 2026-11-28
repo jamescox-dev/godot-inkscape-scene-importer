@@ -1,0 +1,7 @@
+# Normalize EOL for all files that Git considers text files.
+* text=auto eol=lf
+
+# Development-only files are not part of the Asset Store package
+tests/ export-ignore
+scripts/ export-ignore
+AGENTS.md export-ignore

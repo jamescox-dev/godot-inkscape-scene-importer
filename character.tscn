@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://nip81msh343y"]
+
+[ext_resource type="Texture2D" uid="uid://b03rj0ibhkq3d" path="res://addons/inkscape_scene_importer/generated/character.png" id="1_glpr6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glpr6"]
+atlas = ExtResource("1_glpr6")
+region = Rect2(2, 2, 64, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjt0s"]
+atlas = ExtResource("1_glpr6")
+region = Rect2(68, 2, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wa5vi"]
+atlas = ExtResource("1_glpr6")
+region = Rect2(2, 180, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfnr8"]
+atlas = ExtResource("1_glpr6")
+region = Rect2(100, 180, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_px5sl"]
+atlas = ExtResource("1_glpr6")
+region = Rect2(2, 214, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0qfo5"]
+atlas = ExtResource("1_glpr6")
+region = Rect2(100, 214, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxww1"]
+atlas = ExtResource("1_glpr6")
+region = Rect2(198, 214, 32, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wdpcj"]
+atlas = ExtResource("1_glpr6")
+region = Rect2(2, 344, 32, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qi5as"]
+atlas = ExtResource("1_glpr6")
+region = Rect2(36, 344, 32, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jb3kq"]
+atlas = ExtResource("1_glpr6")
+region = Rect2(70, 344, 32, 128)
+
+[node name="Character" type="Node2D" unique_id=298441609]
+
+[node name="Body" type="Sprite2D" parent="." unique_id=1753228357]
+position = Vector2(0, -240)
+texture = SubResource("AtlasTexture_glpr6")
+offset = Vector2(0, -24)
+
+[node name="Head" type="Sprite2D" parent="Body" unique_id=857981287]
+position = Vector2(0, -112)
+texture = SubResource("AtlasTexture_pjt0s")
+offset = Vector2(0, -64)
+
+[node name="RightArm" type="Sprite2D" parent="Body" unique_id=663092722]
+position = Vector2(16, -96)
+texture = SubResource("AtlasTexture_wa5vi")
+offset = Vector2(32, 0)
+
+[node name="Lower" type="Sprite2D" parent="Body/RightArm" unique_id=308939320]
+position = Vector2(64, 0)
+texture = SubResource("AtlasTexture_wfnr8")
+offset = Vector2(32, 0)
+
+[node name="LeftArm" type="Sprite2D" parent="Body" unique_id=1559624462]
+position = Vector2(-16, -96)
+texture = SubResource("AtlasTexture_px5sl")
+offset = Vector2(-32, 0)
+
+[node name="Lower" type="Sprite2D" parent="Body/LeftArm" unique_id=530116978]
+position = Vector2(-64, 0)
+texture = SubResource("AtlasTexture_0qfo5")
+offset = Vector2(-32, 0)
+
+[node name="LeftLeg" type="Sprite2D" parent="Body" unique_id=515415097]
+position = Vector2(-16, 32)
+texture = SubResource("AtlasTexture_yxww1")
+offset = Vector2(0, 48)
+
+[node name="Lower" type="Sprite2D" parent="Body/LeftLeg" unique_id=1956299810]
+position = Vector2(0, 96)
+texture = SubResource("AtlasTexture_wdpcj")
+offset = Vector2(0, 48)
+
+[node name="RightLeg" type="Sprite2D" parent="Body" unique_id=1717054304]
+position = Vector2(16, 32)
+texture = SubResource("AtlasTexture_qi5as")
+offset = Vector2(0, 48)
+
+[node name="Lower" type="Sprite2D" parent="Body/RightLeg" unique_id=1600162006]
+position = Vector2(0, 96)
+texture = SubResource("AtlasTexture_jb3kq")
+offset = Vector2(0, 48)
